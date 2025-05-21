@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<title>Project Briefing</title>
+			<script src="https://cdn.tailwindcss.com"></script>
+			<style>
+			@media print {
+			  body {
+				background-color: white;
+			  }
+			  .no-print {
+				display: none;
+			  }
+			}
+			</style>
+		</head>
+		<body class="bg-gray-100 min-h-screen flex items-center justify-center p-6">
+			<div class="w-full max-w-6xl bg-white rounded-2xl shadow-lg border border-gray-300 p-8">
+				<!-- Header Section -->
+				<div class="mb-6 border border-gray-300 rounded-lg p-4">
+					<div class="grid grid-cols-3 items-center">
+						<img src="https://parksonspackaging.com/wp-content/uploads/2023/08/Parksons-logo-1-190x44.png" alt="Company Logo" class="h-16" />
+						<h1 class="text-2xl font-bold text-center">PROJECT BRIEFING</h1>
+						<p class="text-right font-bold">DOC NO: FO/MKT-15</p>
+					</div>
+				</div>
+
+				<!-- Form Section 1-->
+				<div class="border border-gray-300 rounded-lg p-6 mb-6">
+					<form id="production_plant" class="grid grid-cols-3 gap-6">
+					
+						<!-- Row 1 -->
+						<div>
+						  <label class="block text-gray-600 mb-1">PRODUCTION PLANT</label>
+						  <select name="production_plant" required class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select Plant</option>
+							<option value="1100 - DAMAN">1100 - DAMAN</option>
+							<option value="1200 - CHAKAN">1200 - CHAKAN</option>
+							<option value="1400 - PANTNAGAR I">1400 - PANTNAGAR I</option>
+							<option value="1500- PANTNAGAR II">1500- PANTNAGAR II</option>
+							<option value="1600 - SRICITY">1600 - SRICITY</option>
+							<option value="1700 - GUWAHATI">1700 - GUWAHATI</option>
+							<option value="1800 - GOA">1800 - GOA</option>
+							<option value="1900 - RAJPURA">1900 - RAJPURA</option>
+							<option value="2000 - BADDI">2000 - BADDI</option>
+							<option value="TZ00 - TANZANIA">TZ00 - TANZANIA</option>
+						  </select>
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">PREPRESS PLANT</label>
+						  <select name="prepress_plant" required class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select Plant</option>
+							<option value="1100 - DAMAN">1100 - DAMAN</option>
+							<option value="1200 - CHAKAN">1200 - CHAKAN</option>
+							<option value="1400 - PANTNAGAR I">1400 - PANTNAGAR I</option>
+							<option value="1500- PANTNAGAR II">1500- PANTNAGAR II</option>
+							<option value="1600 - SRICITY">1600 - SRICITY</option>
+							<option value="1700 - GUWAHATI">1700 - GUWAHATI</option>
+							<option value="1800 - GOA">1800 - GOA</option>
+							<option value="1900 - RAJPURA">1900 - RAJPURA</option>
+							<option value="2000 - BADDI">2000 - BADDI</option>
+							<option value="TZ00 - TANZANIA">TZ00 - TANZANIA</option>
+						  </select>
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">Date</label>
+						  <input type="date" name="form_date" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						
+						<!-- Row 2 -->
+						<div>
+						  <label class="block text-gray-600 mb-1">CUSTOMER NAME</label>
+						  <input type="text" name="customer_name" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">BRAND NAME</label>
+						  <input type="text" name="brand_name" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						<div></div>
+
+						<!-- Row 3 -->
+						<div>
+						  <label class="block text-gray-600 mb-1">PKD Required ? (YES/NO | Details)</label>
+						  <select name="pkd_required" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select</option>
+							<option value="YES">YES</option>
+							<option value="NO">NO</option>
+						  </select>
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">PKD Required Details</label>
+						  <input type="text" name="pkd_required_details" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						<div></div>
+						
+						<!-- Row 4 -->
+						<div>
+						  <label class="block text-gray-600 mb-1">PREVIOUS MATERIAL ID</label>
+						  <input type="text" name="previous_material_id" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">COST SHEET REFERENCE NO</label>
+						  <input type="text" name="cost_sheet_reference_no" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">PUNCH REFERENCE</label>
+						  <input type="text" name="punch_reference" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">SHADE REFERENCE</label>
+						  <input type="text" name="shade_reference" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+					</form>
+				</div>
+		
+				<!-- Form Section 2 "CARTON SPECIFICATION"-->
+				<div class="border border-gray-300 rounded-lg p-6 mb-6">
+						
+					<!-- Table Content -->
+					<form id="carton_specification" class="grid grid-cols-3 gap-6">
+						
+						<!-- Subheading full width-->
+						<div class="col-span-3 bg-gray-200 text-center text-lg font-semibold p-2 rounded">
+							<p>CARTON SPECIFICATION</p>
+						</div>
+						
+						<!-- Row 1 -->
+						<div>
+						  <label class="block text-gray-600 mb-1">BOARD GSM</label>
+						  <input type="text" name="board_gsm" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						<div></div>
+						<div></div>
+
+						<!-- Row 2 -->
+						<div>
+						  <label class="block text-gray-600 mb-1">BOARD TYPE</label>
+						  <select name="board_type" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select Board Type</option>
+							<option value="N/A">N/A</option>
+							<option value="NOT KNOWN">NOT KNOWN</option>
+							<option value="ART PAPER">ART PAPER</option>
+							<option value="ARTCARD">ARTCARD</option>
+							<option value="BIBLE PAPER">BIBLE PAPER</option>
+							<option value="BOTHSIDE POLY CTD BOARD">BOTHSIDE POLY CTD BOARD</option>
+							<option value="CHROMO PAPER">CHROMO PAPER</option>
+							<option value="CLC TRIPLEX">CLC TRIPLEX</option>
+							<option value="COATED FOLDING BOX BOARD">COATED FOLDING BOX BOARD</option>
+							<option value="FOIL BOARD 15PT HYPK-NC DULL S">FOIL BOARD 15PT HYPK-NC DULL S</option>
+							<option value="FOLDING BOX BOARD (FBB)">FOLDING BOX BOARD (FBB)</option>
+							<option value="FSC MIXED (FM)">FSC MIXED (FM)</option>
+							<option value="FSC PURE (FP)">FSC PURE (FP)</option>
+							<option value="FSC RECYCLED (FR)">FSC RECYCLED (FR)</option>
+							<option value="GB CGT(Blue Tone)">GB CGT(Blue Tone)</option>
+							<option value="GREY BACK (GB)">GREY BACK (GB)</option>
+							<option value="GREY BACK BLISTER">GREY BACK BLISTER</option>
+							<option value="ITC OBA">ITC OBA</option>
+							<option value="KRAFT PAPER">KRAFT PAPER</option>
+							<option value="MAPLITHO PAPER">MAPLITHO PAPER</option>
+							<option value="ONE SIDE COATED PAPER">ONE SIDE COATED PAPER</option>
+							<option value="ONE SIDE POLY CTD BOARD">ONE SIDE POLY CTD BOARD</option>
+							<option value="OTHER">OTHER</option>
+							<option value="PET">PET</option>
+							<option value="PET COATED BOARD">PET COATED BOARD</option>
+							<option value="PP">PP</option>
+							<option value="S.KAPPA SOLID BD">S.KAPPA SOLID BD</option>
+							<option value="SANDWICH BOARD">SANDWICH BOARD</option>
+							<option value="SAPPI ALGRO DESIGN">SAPPI ALGRO DESIGN</option>
+							<option value="SOLID BLEACHED SULPHATE (SBS)">SOLID BLEACHED SULPHATE (SBS)</option>
+							<option value="SUPER WHITE MAPLITHO PAPER">SUPER WHITE MAPLITHO PAPER</option>
+							<option value="VIRGIN KRAFT">VIRGIN KRAFT</option>
+							<option value="WHITE BACK (WB)">WHITE BACK (WB)</option>
+							<option value="WHITE BACK BLISTER">WHITE BACK BLISTER</option>
+							<option value="WHITE KRAFT PAPER">WHITE KRAFT PAPER</option>
+							<option value="BIOCOMPOSITES">BIOCOMPOSITES</option>
+						  </select>
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">BOARD MILL</label>
+						  <select name="board_mill" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select Board Mill</option>
+							<option value="N/A">N/A</option>
+							<option value="NOT KNOWN">NOT KNOWN</option>
+							<option value="BALKRISHNA">BALKRISHNA</option>
+							<option value="BILT">BILT</option>
+							<option value="CENTURY">CENTURY</option>
+							<option value="DEEVYASHAKTI">DEEVYASHAKTI</option>
+							<option value="DEVPRIYA">DEVPRIYA</option>
+							<option value="DIYAN">DIYAN</option>
+							<option value="EMAMI">EMAMI</option>
+							<option value="FAVINI">FAVINI</option>
+							<option value="FEDRIGONI">FEDRIGONI</option>
+							<option value="GAYATRISHAKTI">GAYATRISHAKTI</option>
+							<option value="IGGESUND">IGGESUND</option>
+							<option value="ITC LTD">ITC LTD</option>
+							<option value="J K">J K</option>
+							<option value="JODHANI MILL">JODHANI MILL</option>
+							<option value="KAPSTONE">KAPSTONE</option>
+							<option value="KHANNA">KHANNA</option>
+							<option value="KRAFT">KRAFT</option>
+							<option value="KRAFT SDP (YASH)">KRAFT SDP (YASH)</option>
+							<option value="LAXMI">LAXMI</option>
+							<option value="MEAD WESTVACO">MEAD WESTVACO</option>
+							<option value="MEHALI">MEHALI</option>
+							<option value="METSA">METSA</option>
+							<option value="MILM">MILM</option>
+							<option value="N R AGARWAL">N R AGARWAL</option>
+							<option value="NAINI PAPERS">NAINI PAPERS</option>
+							<option value="NIPPON DYNAWAVE">NIPPON DYNAWAVE</option>
+							<option value="PP">PP</option>
+							<option value="SAPPI">SAPPI</option>
+							<option value="SHREE AJIT KRAFT">SHREE AJIT KRAFT</option>
+							<option value="SIDHARTH">SIDHARTH</option>
+							<option value="SMURFIT">SMURFIT</option>
+							<option value="SRI VENKATESHWARA">SRI VENKATESHWARA</option>
+							<option value="SRIHARI VENKATESHWARA MILL">SRIHARI VENKATESHWARA MILL</option>
+							<option value="STORA ENSO">STORA ENSO</option>
+							<option value="TNPL">TNPL</option>
+							<option value="WAYARHAEUSE">WAYARHAEUSE</option>
+							<option value="WEST ROCK">WEST ROCK</option>
+						  </select>
+						</div>
+						<div>
+							<label class="block text-gray-600 mb-1">BOARD BRAND</label>
+							<select name="board_brand" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+								<option value="" disabled selected>Select Board Brand</option>
+								<option value="N/A">N/A</option>
+								<option value="NOT KNOWN">NOT KNOWN</option>
+								<option value="A-PET">A-PET</option>
+								<option value="AURA FOLD PREMIUM BOARD">AURA FOLD PREMIUM BOARD</option>
+								<option value="BILT CHROMO ART PAPER">BILT CHROMO ART PAPER</option>
+								<option value="BILT MAPLITHO NSD P H PAPER">BILT MAPLITHO NSD P H PAPER</option>
+								<option value="BK DUPLEX GB">BK DUPLEX GB</option>
+								<option value="BK ECO HWC GB">BK ECO HWC GB</option>
+								<option value="BK SUPER CHROMO GB">BK SUPER CHROMO GB</option>
+								<option value="BK SUPER CHROMO WB">BK SUPER CHROMO WB</option>
+								<option value="BOARD SUPPLIED BY VENDOR">BOARD SUPPLIED BY VENDOR</option>
+								<option value="BROWN KRAFT">BROWN KRAFT</option>
+								<option value="CARTA INTEGRA">CARTA INTEGRA</option>
+								<option value="CENTURY GREY BACK">CENTURY GREY BACK</option>
+								<option value="CENTURY MARINE FOLD ONE SIDE PE COATED">CENTURY MARINE FOLD ONE SIDE PE COATED</option>
+								<option value="CENTURY MARINE GRAPHIC">CENTURY MARINE GRAPHIC</option>
+								<option value="CENTURY OMEGA">CENTURY OMEGA</option>
+								<option value="CENTURY OMEGA PLUS">CENTURY OMEGA PLUS</option>
+								<option value="CENTURY POLYCOATED">CENTURY POLYCOATED</option>
+								<option value="CENTURY PRIMA FOLD">CENTURY PRIMA FOLD</option>
+								<option value="CENTURY PRIMA PLUS">CENTURY PRIMA PLUS</option>
+								<option value="CENTURY SUPERIA FOLD">CENTURY SUPERIA FOLD</option>
+								<option value="CENTURY SUPERIA GRAPHIC">CENTURY SUPERIA GRAPHIC</option>
+								<option value="CENTURY SUPERIAL FOLD PLUS">CENTURY SUPERIAL FOLD PLUS</option>
+								<option value="CENTURY SW MAPLITHO">CENTURY SW MAPLITHO</option>
+								<option value="DEEVYASHAKTI HWC GB">DEEVYASHAKTI HWC GB</option>
+								<option value="DEVPRIYA HWC GB">DEVPRIYA HWC GB</option>
+								<option value="DEVPRIYA HWC WB">DEVPRIYA HWC WB</option>
+								<option value="DIYAN STAR PRIME">DIYAN STAR PRIME</option>
+								<option value="EMAMI ECOSTRONG GB CGT">EMAMI ECOSTRONG GB CGT</option>
+								<option value="EMAMI FBB">EMAMI FBB</option>
+								<option value="EMAMI FBB MAXOFOLD">EMAMI FBB MAXOFOLD</option>
+								<option value="EMAMI GB">EMAMI GB</option>
+								<option value="EMAMI GLAMKOT">EMAMI GLAMKOT</option>
+								<option value="EMAMI WB">EMAMI WB</option>
+								<option value="FLUTTED SHEETS FROM OUTSIDE">FLUTTED SHEETS FROM OUTSIDE</option>
+								<option value="FM STORA NATURAL">FM STORA NATURAL</option>
+								<option value="GAG PET MATT/MATT">GAG PET MATT/MATT</option>
+								<option value="GAYATRI COATED GB">GAYATRI COATED GB</option>
+								<option value="GAYATRI COATED HWC GB BLISTER">GAYATRI COATED HWC GB BLISTER</option>
+								<option value="GAYATRI COATED HWC WB BLISTER">GAYATRI COATED HWC WB BLISTER</option>
+								<option value="GAYATRI COATED WB">GAYATRI COATED WB</option>
+								<option value="GAYATRI HWC WB BLISTER">GAYATRI HWC WB BLISTER</option>
+								<option value="GLOSSY CHROMO ART PAPER">GLOSSY CHROMO ART PAPER</option>
+								<option value="GOLDEN KRAFT">GOLDEN KRAFT</option>
+								<option value="IMPORTED WHITE KRAFT LINER">IMPORTED WHITE KRAFT LINER</option>
+								<option value="INVERCOTE CREATO MATT">INVERCOTE CREATO MATT</option>
+								<option value="ITC BLEACHED KRAFTLINER">ITC BLEACHED KRAFTLINER</option>
+								<option value="ITC C2S SG ARTCARD">ITC C2S SG ARTCARD</option>
+								<option value="ITC CARTE LUMINA">ITC CARTE LUMINA</option>
+								<option value="ITC CFK">ITC CFK</option>
+								<option value="ITC CLC TRIPLEX FSC BOARD">ITC CLC TRIPLEX FSC BOARD</option>
+								<option value="ITC COATED GB BCM">ITC COATED GB BCM</option>
+								<option value="ITC CTD HIGH BUSTER LIN">ITC CTD HIGH BUSTER LIN</option>
+								<option value="ITC CTD W K LINER">ITC CTD W K LINER</option>
+								<option value="ITC CYBERXL CYX GC2">ITC CYBERXL CYX GC2</option>
+								<option value="ITC CYBERXL GC1 MTS CTD">ITC CYBERXL GC1 MTS CTD</option>
+								<option value="ITC CYBERXLPAC">ITC CYBERXLPAC</option>
+								<option value="ITC CYBERXLPAC AF">ITC CYBERXLPAC AF</option>
+								<option value="ITC CYBERXLPAC GC1">ITC CYBERXLPAC GC1</option>
+								<option value="ITC CYBERXLPAC GC2">ITC CYBERXLPAC GC2</option>
+								<option value="ITC CYBERXLPAC PREMIUM">ITC CYBERXLPAC PREMIUM</option>
+								<option value="ITC FILOPACK">ITC FILOPACK</option>
+								<option value="ITC FILOSERVE">ITC FILOSERVE</option>
+								<option value="ITC HIGH STIFF GB">ITC HIGH STIFF GB</option>
+								<option value="ITC HIZINE PAPER">ITC HIZINE PAPER</option>
+								<option value="ITC INDO BAR">ITC INDO BAR</option>
+								<option value="ITC INDO BAR 1 PE">ITC INDO BAR 1 PE</option>
+								<option value="ITC INDO RK SANDWICH">ITC INDO RK SANDWICH</option>
+								<option value="ITC INDOBAR ECO 2PE">ITC INDOBAR ECO 2PE</option>
+								<option value="ITC INDOBASE [MF]TRIPLEX BD">ITC INDOBASE [MF]TRIPLEX BD</option>
+								<option value="ITC INDOBASE [MF]TRIPLEX BD COATED">ITC INDOBASE [MF]TRIPLEX BD COATED</option>
+								<option value="ITC INDOBASE UNTD VIVAA">ITC INDOBASE UNTD VIVAA</option>
+								<option value="ITC INDOBOWL 1 PE">ITC INDOBOWL 1 PE</option>
+								<option value="ITC INDOLUX SAFFIRE">ITC INDOLUX SAFFIRE</option>
+								<option value="ITC KOVAI COATED FR GB">ITC KOVAI COATED FR GB</option>
+								<option value="ITC KOVAI COATED GB">ITC KOVAI COATED GB</option>
+								<option value="ITC KOVAI COATED GB HS">ITC KOVAI COATED GB HS</option>
+								<option value="ITC KOVAI COATED GB PREMIUM">ITC KOVAI COATED GB PREMIUM</option>
+								<option value="ITC KOVAI COATED HB GB">ITC KOVAI COATED HB GB</option>
+								<option value="ITC KOVAI COATED WB">ITC KOVAI COATED WB</option>
+								<option value="ITC KOVAI COATED WB PREMIUM">ITC KOVAI COATED WB PREMIUM</option>
+								<option value="ITC KOVAI WB HS">ITC KOVAI WB HS</option>
+								<option value="ITC NEO BLISS">ITC NEO BLISS</option>
+								<option value="ITC NEO BLISS SANDWICH BOARD">ITC NEO BLISS SANDWICH BOARD</option>
+								<option value="ITC NEO WHITE BLISS">ITC NEO WHITE BLISS</option>
+								<option value="ITC OBA CLC TRIPLEX">ITC OBA CLC TRIPLEX</option>
+								<option value="ITC PEARL GRAPHIK">ITC PEARL GRAPHIK</option>
+								<option value="ITC PEARLXLPAC">ITC PEARLXLPAC</option>
+								<option value="ITC PHARMA PRINT">ITC PHARMA PRINT</option>
+								<option value="ITC SAFFIRE GRAPHIK">ITC SAFFIRE GRAPHIK</option>
+								<option value="ITC SAFFIRE GRAPHIK 1PE">ITC SAFFIRE GRAPHIK 1PE</option>
+								<option value="ITC SAFFIRE GRAPHIK C2S">ITC SAFFIRE GRAPHIK C2S</option>
+								<option value="ITC SAFFIRE XLPAC">ITC SAFFIRE XLPAC</option>
+								<option value="ITC SUPERFINE PRINT">ITC SUPERFINE PRINT</option>
+								<option value="ITC VIVA LINER">ITC VIVA LINER</option>
+								<option value="ITC VIVAA CARD">ITC VIVAA CARD</option>
+								<option value="ITC WHITE KRAFT LINER">ITC WHITE KRAFT LINER</option>
+								<option value="JK ARTCARD">JK ARTCARD</option>
+								<option value="JK MAPLITHO PAPER">JK MAPLITHO PAPER</option>
+								<option value="JK TUFFCOTE">JK TUFFCOTE</option>
+								<option value="JK TUFFCOTE HIGH BULK">JK TUFFCOTE HIGH BULK</option>
+								<option value="JK ULTIMA">JK ULTIMA</option>
+								<option value="KAPSTONE KRAFTPAK">KAPSTONE KRAFTPAK</option>
+								<option value="KHANNA DIAMOND GRAPHIK GB">KHANNA DIAMOND GRAPHIK GB</option>
+								<option value="KHANNA OPTIC GB">KHANNA OPTIC GB</option>
+								<option value="KHANNA OPTIC WB">KHANNA OPTIC WB</option>
+								<option value="KRAFT KOREAN SHADE">KRAFT KOREAN SHADE</option>
+								<option value="KRAFT PAPER">KRAFT PAPER</option>
+								<option value="MAPLITHO PAPER">MAPLITHO PAPER</option>
+								<option value="MATERICA GESSO">MATERICA GESSO</option>
+								<option value="MEADWEST PRINTCOTE C1S">MEADWEST PRINTCOTE C1S</option>
+								<option value="MEADWEST PRINTCOTE C2S">MEADWEST PRINTCOTE C2S</option>
+								<option value="MEHALI ECO GREEN GB">MEHALI ECO GREEN GB</option>
+								<option value="MEHALI ECO WHITE WB">MEHALI ECO WHITE WB</option>
+								<option value="METALIZED BOARD FROM CUSTOMER">METALIZED BOARD FROM CUSTOMER</option>
+								<option value="METSA AVANTA ULTRA">METSA AVANTA ULTRA</option>
+								<option value="METSA PRIME FBB BRIGHT">METSA PRIME FBB BRIGHT</option>
+								<option value="METSA PRIME FBB EB">METSA PRIME FBB EB</option>
+								<option value="METSA SIMCOTE FBB">METSA SIMCOTE FBB</option>
+								<option value="MILM KAPPA GB+WB">MILM KAPPA GB+WB</option>
+								<option value="N R EXCEL">N R EXCEL</option>
+								<option value="NR CLASSIC PAPER">NR CLASSIC PAPER</option>
+								<option value="NR COATED WB">NR COATED WB</option>
+								<option value="NR DUPLEX GB">NR DUPLEX GB</option>
+								<option value="NR WB BLISTER">NR WB BLISTER</option>
+								<option value="PET">PET</option>
+								<option value="POL WAYERHAEUSE G-9159">POL WAYERHAEUSE G-9159</option>
+								<option value="POLY COAT LIQ PACK BD 9159">POLY COAT LIQ PACK BD 9159</option>
+								<option value="POLYCOATED GAY WB">POLYCOATED GAY WB</option>
+								<option value="POLYCTD CENTURY SWMAPLIT">POLYCTD CENTURY SWMAPLIT</option>
+								<option value="PP BLACK ROUGHSAND/SAND PP">PP BLACK ROUGHSAND/SAND PP</option>
+								<option value="PP BOTH SIDES GLOSS">PP BOTH SIDES GLOSS</option>
+								<option value="PP CROSSLINE/GLOSS">PP CROSSLINE/GLOSS</option>
+								<option value="PP DEADMATT/SANDMATT">PP DEADMATT/SANDMATT</option>
+								<option value="PP FINE SAND/FINE SAND MILKY">PP FINE SAND/FINE SAND MILKY</option>
+								<option value="PP FINE SAND/GLOSS">PP FINE SAND/GLOSS</option>
+								<option value="PP FINE SAND/SANDMATT">PP FINE SAND/SANDMATT</option>
+								<option value="PP GLOSS/ FINE SAND MATT">PP GLOSS/ FINE SAND MATT</option>
+								<option value="PP GLOSS/DULLMATT">PP GLOSS/DULLMATT</option>
+								<option value="PP GLOSS/FINEMATT">PP GLOSS/FINEMATT</option>
+								<option value="PP GLOSS/GLOSS">PP GLOSS/GLOSS</option>
+								<option value="PP GLOSS/GLOSS HIGH CLE">PP GLOSS/GLOSS HIGH CLE</option>
+								<option value="PP GLOSS/GLOSS HT">PP GLOSS/GLOSS HT</option>
+								<option value="PP GLOSS/GLOSS ULTRACLE">PP GLOSS/GLOSS ULTRACLE</option>
+								<option value="PP GLOSS/PLAIN">PP GLOSS/PLAIN</option>
+								<option value="PP GLOSS/SANDMATT">PP GLOSS/SANDMATT</option>
+								<option value="PP MILKYWHIT ROUGH SAND/SAND">PP MILKYWHIT ROUGH SAND/SAND</option>
+								<option value="PP MILKYWHIT SAND/PLAIN">PP MILKYWHIT SAND/PLAIN</option>
+								<option value="PP PMS 431C ROUGHSAND/SAND PP">PP PMS 431C ROUGHSAND/SAND PP</option>
+								<option value="PP PMS 5463U ROUGHSAND/SAND PP">PP PMS 5463U ROUGHSAND/SAND PP</option>
+								<option value="PP STRAIGHTLINE/GLOSS">PP STRAIGHTLINE/GLOSS</option>
+								<option value="PRINT COTE WEST VACO">PRINT COTE WEST VACO</option>
+								<option value="PRINTED BOARD FROM OUTSIDE">PRINTED BOARD FROM OUTSIDE</option>
+								<option value="PRINTED KRAFT FROM EXTERNAL VENDOR">PRINTED KRAFT FROM EXTERNAL VENDOR</option>
+								<option value="SANDWICH (BOARD/KRAFT)">SANDWICH (BOARD/KRAFT)</option>
+								<option value="SAPPI ALGRO DESIGN">SAPPI ALGRO DESIGN</option>
+								<option value="SAPPI MAGNOSTAR ARTPAPER">SAPPI MAGNOSTAR ARTPAPER</option>
+								<option value="SHIRO ECO WH FN PAPER">SHIRO ECO WH FN PAPER</option>
+								<option value="SIDHARTH CLASSIC GB">SIDHARTH CLASSIC GB</option>
+								<option value="SIDHARTH CRYSTAL WB">SIDHARTH CRYSTAL WB</option>
+								<option value="SMURFIT BOARD 2.00MM CALIPER">SMURFIT BOARD 2.00MM CALIPER</option>
+								<option value="STORA CKB CARRIER BOARD">STORA CKB CARRIER BOARD</option>
+								<option value="STORA COATED KRAFT">STORA COATED KRAFT</option>
+								<option value="STORA ENSO COAT">STORA ENSO COAT</option>
+								<option value="STORA ENSO COATED GB">STORA ENSO COATED GB</option>
+								<option value="STORA ENSO COTE">STORA ENSO COTE</option>
+								<option value="STORA ENSO TRAYFORMA">STORA ENSO TRAYFORMA</option>
+								<option value="STORA ENSO TRAYFORMA BIO">STORA ENSO TRAYFORMA BIO</option>
+								<option value="STORA NATURA 2 PE">STORA NATURA 2 PE</option>
+								<option value="STORA NATURA AL93 378G">STORA NATURA AL93 378G</option>
+								<option value="STORA TAM BRITE">STORA TAM BRITE</option>
+								<option value="STORA TAM WHITE">STORA TAM WHITE</option>
+								<option value="VENK KAPPA GB+GB">VENK KAPPA GB+GB</option>
+								<option value="VENK KAPPA GB+WB">VENK KAPPA GB+WB</option>
+								<option value="WHITE KRAFT LINER">WHITE KRAFT LINER</option>
+							</select>
+						</div>
+						
+						<!-- Row 3 -->
+						<div>
+						  <label class="block text-gray-600 mb-1">BOARD NOMINATED?</label>
+						  <select name="board_nominated" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select</option>
+							<option value="YES">YES</option>
+							<option value="NO">NO</option>
+						  </select>
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">BOARD TO BOARD NOMINATED?</label>
+						  <select name="board_to_board_nominated" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select</option>
+							<option value="YES">YES</option>
+							<option value="NO">NO</option>
+						  </select>
+						</div>
+						<div></div>
+						
+						<!-- Row 4 -->
+						<div>
+						  <label class="block text-gray-600 mb-1">BOARD TO BOARD LAMINATION?</label>
+						  <select name="board_to_board_lamination" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select</option>
+							<option value="YES">YES</option>
+							<option value="NO">NO</option>
+						  </select>
+						</div>
+						<div></div>
+						<div></div>
+						
+						<!-- Row 5 -->
+						<div>
+						  <label class="block text-gray-600 mb-1">OPTION 1</label>
+						  <select name="board_lamination_option_1" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select Board Type</option>
+							<option value="N/A">N/A</option>
+							<option value="NOT KNOWN">NOT KNOWN</option>
+							<option value="ART PAPER">ART PAPER</option>
+							<option value="ARTCARD">ARTCARD</option>
+							<option value="BIBLE PAPER">BIBLE PAPER</option>
+							<option value="BOTHSIDE POLY CTD BOARD">BOTHSIDE POLY CTD BOARD</option>
+							<option value="CHROMO PAPER">CHROMO PAPER</option>
+							<option value="CLC TRIPLEX">CLC TRIPLEX</option>
+							<option value="COATED FOLDING BOX BOARD">COATED FOLDING BOX BOARD</option>
+							<option value="FOIL BOARD 15PT HYPK-NC DULL S">FOIL BOARD 15PT HYPK-NC DULL S</option>
+							<option value="FOLDING BOX BOARD (FBB)">FOLDING BOX BOARD (FBB)</option>
+							<option value="FSC MIXED (FM)">FSC MIXED (FM)</option>
+							<option value="FSC PURE (FP)">FSC PURE (FP)</option>
+							<option value="FSC RECYCLED (FR)">FSC RECYCLED (FR)</option>
+							<option value="GB CGT(Blue Tone)">GB CGT(Blue Tone)</option>
+							<option value="GREY BACK (GB)">GREY BACK (GB)</option>
+							<option value="GREY BACK BLISTER">GREY BACK BLISTER</option>
+							<option value="ITC OBA">ITC OBA</option>
+							<option value="KRAFT PAPER">KRAFT PAPER</option>
+							<option value="MAPLITHO PAPER">MAPLITHO PAPER</option>
+							<option value="ONE SIDE COATED PAPER">ONE SIDE COATED PAPER</option>
+							<option value="ONE SIDE POLY CTD BOARD">ONE SIDE POLY CTD BOARD</option>
+							<option value="OTHER">OTHER</option>
+							<option value="PET">PET</option>
+							<option value="PET COATED BOARD">PET COATED BOARD</option>
+							<option value="PP">PP</option>
+							<option value="S.KAPPA SOLID BD">S.KAPPA SOLID BD</option>
+							<option value="SANDWICH BOARD">SANDWICH BOARD</option>
+							<option value="SAPPI ALGRO DESIGN">SAPPI ALGRO DESIGN</option>
+							<option value="SOLID BLEACHED SULPHATE (SBS)">SOLID BLEACHED SULPHATE (SBS)</option>
+							<option value="SUPER WHITE MAPLITHO PAPER">SUPER WHITE MAPLITHO PAPER</option>
+							<option value="VIRGIN KRAFT">VIRGIN KRAFT</option>
+							<option value="WHITE BACK (WB)">WHITE BACK (WB)</option>
+							<option value="WHITE BACK BLISTER">WHITE BACK BLISTER</option>
+							<option value="WHITE KRAFT PAPER">WHITE KRAFT PAPER</option>
+							<option value="BIOCOMPOSITES">BIOCOMPOSITES</option>
+						  </select>
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">OPTION 2</label>
+						  <select name="board_lamination_option_2" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select Board Mill</option>
+							<option value="N/A">N/A</option>
+							<option value="NOT KNOWN">NOT KNOWN</option>
+							<option value="BALKRISHNA">BALKRISHNA</option>
+							<option value="BILT">BILT</option>
+							<option value="CENTURY">CENTURY</option>
+							<option value="DEEVYASHAKTI">DEEVYASHAKTI</option>
+							<option value="DEVPRIYA">DEVPRIYA</option>
+							<option value="DIYAN">DIYAN</option>
+							<option value="EMAMI">EMAMI</option>
+							<option value="FAVINI">FAVINI</option>
+							<option value="FEDRIGONI">FEDRIGONI</option>
+							<option value="GAYATRISHAKTI">GAYATRISHAKTI</option>
+							<option value="IGGESUND">IGGESUND</option>
+							<option value="ITC LTD">ITC LTD</option>
+							<option value="J K">J K</option>
+							<option value="JODHANI MILL">JODHANI MILL</option>
+							<option value="KAPSTONE">KAPSTONE</option>
+							<option value="KHANNA">KHANNA</option>
+							<option value="KRAFT">KRAFT</option>
+							<option value="KRAFT SDP (YASH)">KRAFT SDP (YASH)</option>
+							<option value="LAXMI">LAXMI</option>
+							<option value="MEAD WESTVACO">MEAD WESTVACO</option>
+							<option value="MEHALI">MEHALI</option>
+							<option value="METSA">METSA</option>
+							<option value="MILM">MILM</option>
+							<option value="N R AGARWAL">N R AGARWAL</option>
+							<option value="NAINI PAPERS">NAINI PAPERS</option>
+							<option value="NIPPON DYNAWAVE">NIPPON DYNAWAVE</option>
+							<option value="PP">PP</option>
+							<option value="SAPPI">SAPPI</option>
+							<option value="SHREE AJIT KRAFT">SHREE AJIT KRAFT</option>
+							<option value="SIDHARTH">SIDHARTH</option>
+							<option value="SMURFIT">SMURFIT</option>
+							<option value="SRI VENKATESHWARA">SRI VENKATESHWARA</option>
+							<option value="SRIHARI VENKATESHWARA MILL">SRIHARI VENKATESHWARA MILL</option>
+							<option value="STORA ENSO">STORA ENSO</option>
+							<option value="TNPL">TNPL</option>
+							<option value="WAYARHAEUSE">WAYARHAEUSE</option>
+							<option value="WEST ROCK">WEST ROCK</option>
+						  </select>
+						</div>
+						<div>
+							<label class="block text-gray-600 mb-1">OPTION 3</label>
+							<select name="board_lamination_option_3" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+								<option value="" disabled selected>Select Board Brand</option>
+								<option value="N/A">N/A</option>
+								<option value="NOT KNOWN">NOT KNOWN</option>
+								<option value="A-PET">A-PET</option>
+								<option value="AURA FOLD PREMIUM BOARD">AURA FOLD PREMIUM BOARD</option>
+								<option value="BILT CHROMO ART PAPER">BILT CHROMO ART PAPER</option>
+								<option value="BILT MAPLITHO NSD P H PAPER">BILT MAPLITHO NSD P H PAPER</option>
+								<option value="BK DUPLEX GB">BK DUPLEX GB</option>
+								<option value="BK ECO HWC GB">BK ECO HWC GB</option>
+								<option value="BK SUPER CHROMO GB">BK SUPER CHROMO GB</option>
+								<option value="BK SUPER CHROMO WB">BK SUPER CHROMO WB</option>
+								<option value="BOARD SUPPLIED BY VENDOR">BOARD SUPPLIED BY VENDOR</option>
+								<option value="BROWN KRAFT">BROWN KRAFT</option>
+								<option value="CARTA INTEGRA">CARTA INTEGRA</option>
+								<option value="CENTURY GREY BACK">CENTURY GREY BACK</option>
+								<option value="CENTURY MARINE FOLD ONE SIDE PE COATED">CENTURY MARINE FOLD ONE SIDE PE COATED</option>
+								<option value="CENTURY MARINE GRAPHIC">CENTURY MARINE GRAPHIC</option>
+								<option value="CENTURY OMEGA">CENTURY OMEGA</option>
+								<option value="CENTURY OMEGA PLUS">CENTURY OMEGA PLUS</option>
+								<option value="CENTURY POLYCOATED">CENTURY POLYCOATED</option>
+								<option value="CENTURY PRIMA FOLD">CENTURY PRIMA FOLD</option>
+								<option value="CENTURY PRIMA PLUS">CENTURY PRIMA PLUS</option>
+								<option value="CENTURY SUPERIA FOLD">CENTURY SUPERIA FOLD</option>
+								<option value="CENTURY SUPERIA GRAPHIC">CENTURY SUPERIA GRAPHIC</option>
+								<option value="CENTURY SUPERIAL FOLD PLUS">CENTURY SUPERIAL FOLD PLUS</option>
+								<option value="CENTURY SW MAPLITHO">CENTURY SW MAPLITHO</option>
+								<option value="DEEVYASHAKTI HWC GB">DEEVYASHAKTI HWC GB</option>
+								<option value="DEVPRIYA HWC GB">DEVPRIYA HWC GB</option>
+								<option value="DEVPRIYA HWC WB">DEVPRIYA HWC WB</option>
+								<option value="DIYAN STAR PRIME">DIYAN STAR PRIME</option>
+								<option value="EMAMI ECOSTRONG GB CGT">EMAMI ECOSTRONG GB CGT</option>
+								<option value="EMAMI FBB">EMAMI FBB</option>
+								<option value="EMAMI FBB MAXOFOLD">EMAMI FBB MAXOFOLD</option>
+								<option value="EMAMI GB">EMAMI GB</option>
+								<option value="EMAMI GLAMKOT">EMAMI GLAMKOT</option>
+								<option value="EMAMI WB">EMAMI WB</option>
+								<option value="FLUTTED SHEETS FROM OUTSIDE">FLUTTED SHEETS FROM OUTSIDE</option>
+								<option value="FM STORA NATURAL">FM STORA NATURAL</option>
+								<option value="GAG PET MATT/MATT">GAG PET MATT/MATT</option>
+								<option value="GAYATRI COATED GB">GAYATRI COATED GB</option>
+								<option value="GAYATRI COATED HWC GB BLISTER">GAYATRI COATED HWC GB BLISTER</option>
+								<option value="GAYATRI COATED HWC WB BLISTER">GAYATRI COATED HWC WB BLISTER</option>
+								<option value="GAYATRI COATED WB">GAYATRI COATED WB</option>
+								<option value="GAYATRI HWC WB BLISTER">GAYATRI HWC WB BLISTER</option>
+								<option value="GLOSSY CHROMO ART PAPER">GLOSSY CHROMO ART PAPER</option>
+								<option value="GOLDEN KRAFT">GOLDEN KRAFT</option>
+								<option value="IMPORTED WHITE KRAFT LINER">IMPORTED WHITE KRAFT LINER</option>
+								<option value="INVERCOTE CREATO MATT">INVERCOTE CREATO MATT</option>
+								<option value="ITC BLEACHED KRAFTLINER">ITC BLEACHED KRAFTLINER</option>
+								<option value="ITC C2S SG ARTCARD">ITC C2S SG ARTCARD</option>
+								<option value="ITC CARTE LUMINA">ITC CARTE LUMINA</option>
+								<option value="ITC CFK">ITC CFK</option>
+								<option value="ITC CLC TRIPLEX FSC BOARD">ITC CLC TRIPLEX FSC BOARD</option>
+								<option value="ITC COATED GB BCM">ITC COATED GB BCM</option>
+								<option value="ITC CTD HIGH BUSTER LIN">ITC CTD HIGH BUSTER LIN</option>
+								<option value="ITC CTD W K LINER">ITC CTD W K LINER</option>
+								<option value="ITC CYBERXL CYX GC2">ITC CYBERXL CYX GC2</option>
+								<option value="ITC CYBERXL GC1 MTS CTD">ITC CYBERXL GC1 MTS CTD</option>
+								<option value="ITC CYBERXLPAC">ITC CYBERXLPAC</option>
+								<option value="ITC CYBERXLPAC AF">ITC CYBERXLPAC AF</option>
+								<option value="ITC CYBERXLPAC GC1">ITC CYBERXLPAC GC1</option>
+								<option value="ITC CYBERXLPAC GC2">ITC CYBERXLPAC GC2</option>
+								<option value="ITC CYBERXLPAC PREMIUM">ITC CYBERXLPAC PREMIUM</option>
+								<option value="ITC FILOPACK">ITC FILOPACK</option>
+								<option value="ITC FILOSERVE">ITC FILOSERVE</option>
+								<option value="ITC HIGH STIFF GB">ITC HIGH STIFF GB</option>
+								<option value="ITC HIZINE PAPER">ITC HIZINE PAPER</option>
+								<option value="ITC INDO BAR">ITC INDO BAR</option>
+								<option value="ITC INDO BAR 1 PE">ITC INDO BAR 1 PE</option>
+								<option value="ITC INDO RK SANDWICH">ITC INDO RK SANDWICH</option>
+								<option value="ITC INDOBAR ECO 2PE">ITC INDOBAR ECO 2PE</option>
+								<option value="ITC INDOBASE [MF]TRIPLEX BD">ITC INDOBASE [MF]TRIPLEX BD</option>
+								<option value="ITC INDOBASE [MF]TRIPLEX BD COATED">ITC INDOBASE [MF]TRIPLEX BD COATED</option>
+								<option value="ITC INDOBASE UNTD VIVAA">ITC INDOBASE UNTD VIVAA</option>
+								<option value="ITC INDOBOWL 1 PE">ITC INDOBOWL 1 PE</option>
+								<option value="ITC INDOLUX SAFFIRE">ITC INDOLUX SAFFIRE</option>
+								<option value="ITC KOVAI COATED FR GB">ITC KOVAI COATED FR GB</option>
+								<option value="ITC KOVAI COATED GB">ITC KOVAI COATED GB</option>
+								<option value="ITC KOVAI COATED GB HS">ITC KOVAI COATED GB HS</option>
+								<option value="ITC KOVAI COATED GB PREMIUM">ITC KOVAI COATED GB PREMIUM</option>
+								<option value="ITC KOVAI COATED HB GB">ITC KOVAI COATED HB GB</option>
+								<option value="ITC KOVAI COATED WB">ITC KOVAI COATED WB</option>
+								<option value="ITC KOVAI COATED WB PREMIUM">ITC KOVAI COATED WB PREMIUM</option>
+								<option value="ITC KOVAI WB HS">ITC KOVAI WB HS</option>
+								<option value="ITC NEO BLISS">ITC NEO BLISS</option>
+								<option value="ITC NEO BLISS SANDWICH BOARD">ITC NEO BLISS SANDWICH BOARD</option>
+								<option value="ITC NEO WHITE BLISS">ITC NEO WHITE BLISS</option>
+								<option value="ITC OBA CLC TRIPLEX">ITC OBA CLC TRIPLEX</option>
+								<option value="ITC PEARL GRAPHIK">ITC PEARL GRAPHIK</option>
+								<option value="ITC PEARLXLPAC">ITC PEARLXLPAC</option>
+								<option value="ITC PHARMA PRINT">ITC PHARMA PRINT</option>
+								<option value="ITC SAFFIRE GRAPHIK">ITC SAFFIRE GRAPHIK</option>
+								<option value="ITC SAFFIRE GRAPHIK 1PE">ITC SAFFIRE GRAPHIK 1PE</option>
+								<option value="ITC SAFFIRE GRAPHIK C2S">ITC SAFFIRE GRAPHIK C2S</option>
+								<option value="ITC SAFFIRE XLPAC">ITC SAFFIRE XLPAC</option>
+								<option value="ITC SUPERFINE PRINT">ITC SUPERFINE PRINT</option>
+								<option value="ITC VIVA LINER">ITC VIVA LINER</option>
+								<option value="ITC VIVAA CARD">ITC VIVAA CARD</option>
+								<option value="ITC WHITE KRAFT LINER">ITC WHITE KRAFT LINER</option>
+								<option value="JK ARTCARD">JK ARTCARD</option>
+								<option value="JK MAPLITHO PAPER">JK MAPLITHO PAPER</option>
+								<option value="JK TUFFCOTE">JK TUFFCOTE</option>
+								<option value="JK TUFFCOTE HIGH BULK">JK TUFFCOTE HIGH BULK</option>
+								<option value="JK ULTIMA">JK ULTIMA</option>
+								<option value="KAPSTONE KRAFTPAK">KAPSTONE KRAFTPAK</option>
+								<option value="KHANNA DIAMOND GRAPHIK GB">KHANNA DIAMOND GRAPHIK GB</option>
+								<option value="KHANNA OPTIC GB">KHANNA OPTIC GB</option>
+								<option value="KHANNA OPTIC WB">KHANNA OPTIC WB</option>
+								<option value="KRAFT KOREAN SHADE">KRAFT KOREAN SHADE</option>
+								<option value="KRAFT PAPER">KRAFT PAPER</option>
+								<option value="MAPLITHO PAPER">MAPLITHO PAPER</option>
+								<option value="MATERICA GESSO">MATERICA GESSO</option>
+								<option value="MEADWEST PRINTCOTE C1S">MEADWEST PRINTCOTE C1S</option>
+								<option value="MEADWEST PRINTCOTE C2S">MEADWEST PRINTCOTE C2S</option>
+								<option value="MEHALI ECO GREEN GB">MEHALI ECO GREEN GB</option>
+								<option value="MEHALI ECO WHITE WB">MEHALI ECO WHITE WB</option>
+								<option value="METALIZED BOARD FROM CUSTOMER">METALIZED BOARD FROM CUSTOMER</option>
+								<option value="METSA AVANTA ULTRA">METSA AVANTA ULTRA</option>
+								<option value="METSA PRIME FBB BRIGHT">METSA PRIME FBB BRIGHT</option>
+								<option value="METSA PRIME FBB EB">METSA PRIME FBB EB</option>
+								<option value="METSA SIMCOTE FBB">METSA SIMCOTE FBB</option>
+								<option value="MILM KAPPA GB+WB">MILM KAPPA GB+WB</option>
+								<option value="N R EXCEL">N R EXCEL</option>
+								<option value="NR CLASSIC PAPER">NR CLASSIC PAPER</option>
+								<option value="NR COATED WB">NR COATED WB</option>
+								<option value="NR DUPLEX GB">NR DUPLEX GB</option>
+								<option value="NR WB BLISTER">NR WB BLISTER</option>
+								<option value="PET">PET</option>
+								<option value="POL WAYERHAEUSE G-9159">POL WAYERHAEUSE G-9159</option>
+								<option value="POLY COAT LIQ PACK BD 9159">POLY COAT LIQ PACK BD 9159</option>
+								<option value="POLYCOATED GAY WB">POLYCOATED GAY WB</option>
+								<option value="POLYCTD CENTURY SWMAPLIT">POLYCTD CENTURY SWMAPLIT</option>
+								<option value="PP BLACK ROUGHSAND/SAND PP">PP BLACK ROUGHSAND/SAND PP</option>
+								<option value="PP BOTH SIDES GLOSS">PP BOTH SIDES GLOSS</option>
+								<option value="PP CROSSLINE/GLOSS">PP CROSSLINE/GLOSS</option>
+								<option value="PP DEADMATT/SANDMATT">PP DEADMATT/SANDMATT</option>
+								<option value="PP FINE SAND/FINE SAND MILKY">PP FINE SAND/FINE SAND MILKY</option>
+								<option value="PP FINE SAND/GLOSS">PP FINE SAND/GLOSS</option>
+								<option value="PP FINE SAND/SANDMATT">PP FINE SAND/SANDMATT</option>
+								<option value="PP GLOSS/ FINE SAND MATT">PP GLOSS/ FINE SAND MATT</option>
+								<option value="PP GLOSS/DULLMATT">PP GLOSS/DULLMATT</option>
+								<option value="PP GLOSS/FINEMATT">PP GLOSS/FINEMATT</option>
+								<option value="PP GLOSS/GLOSS">PP GLOSS/GLOSS</option>
+								<option value="PP GLOSS/GLOSS HIGH CLE">PP GLOSS/GLOSS HIGH CLE</option>
+								<option value="PP GLOSS/GLOSS HT">PP GLOSS/GLOSS HT</option>
+								<option value="PP GLOSS/GLOSS ULTRACLE">PP GLOSS/GLOSS ULTRACLE</option>
+								<option value="PP GLOSS/PLAIN">PP GLOSS/PLAIN</option>
+								<option value="PP GLOSS/SANDMATT">PP GLOSS/SANDMATT</option>
+								<option value="PP MILKYWHIT ROUGH SAND/SAND">PP MILKYWHIT ROUGH SAND/SAND</option>
+								<option value="PP MILKYWHIT SAND/PLAIN">PP MILKYWHIT SAND/PLAIN</option>
+								<option value="PP PMS 431C ROUGHSAND/SAND PP">PP PMS 431C ROUGHSAND/SAND PP</option>
+								<option value="PP PMS 5463U ROUGHSAND/SAND PP">PP PMS 5463U ROUGHSAND/SAND PP</option>
+								<option value="PP STRAIGHTLINE/GLOSS">PP STRAIGHTLINE/GLOSS</option>
+								<option value="PRINT COTE WEST VACO">PRINT COTE WEST VACO</option>
+								<option value="PRINTED BOARD FROM OUTSIDE">PRINTED BOARD FROM OUTSIDE</option>
+								<option value="PRINTED KRAFT FROM EXTERNAL VENDOR">PRINTED KRAFT FROM EXTERNAL VENDOR</option>
+								<option value="SANDWICH (BOARD/KRAFT)">SANDWICH (BOARD/KRAFT)</option>
+								<option value="SAPPI ALGRO DESIGN">SAPPI ALGRO DESIGN</option>
+								<option value="SAPPI MAGNOSTAR ARTPAPER">SAPPI MAGNOSTAR ARTPAPER</option>
+								<option value="SHIRO ECO WH FN PAPER">SHIRO ECO WH FN PAPER</option>
+								<option value="SIDHARTH CLASSIC GB">SIDHARTH CLASSIC GB</option>
+								<option value="SIDHARTH CRYSTAL WB">SIDHARTH CRYSTAL WB</option>
+								<option value="SMURFIT BOARD 2.00MM CALIPER">SMURFIT BOARD 2.00MM CALIPER</option>
+								<option value="STORA CKB CARRIER BOARD">STORA CKB CARRIER BOARD</option>
+								<option value="STORA COATED KRAFT">STORA COATED KRAFT</option>
+								<option value="STORA ENSO COAT">STORA ENSO COAT</option>
+								<option value="STORA ENSO COATED GB">STORA ENSO COATED GB</option>
+								<option value="STORA ENSO COTE">STORA ENSO COTE</option>
+								<option value="STORA ENSO TRAYFORMA">STORA ENSO TRAYFORMA</option>
+								<option value="STORA ENSO TRAYFORMA BIO">STORA ENSO TRAYFORMA BIO</option>
+								<option value="STORA NATURA 2 PE">STORA NATURA 2 PE</option>
+								<option value="STORA NATURA AL93 378G">STORA NATURA AL93 378G</option>
+								<option value="STORA TAM BRITE">STORA TAM BRITE</option>
+								<option value="STORA TAM WHITE">STORA TAM WHITE</option>
+								<option value="VENK KAPPA GB+GB">VENK KAPPA GB+GB</option>
+								<option value="VENK KAPPA GB+WB">VENK KAPPA GB+WB</option>
+								<option value="WHITE KRAFT LINER">WHITE KRAFT LINER</option>
+							</select>
+						</div>
+						
+						<!-- Subheading full width-->
+						<div class="col-span-3 bg-gray-200 text-center text-lg font-semibold p-2 rounded">
+							<p>FLUTING DETAILS</p>
+						</div>
+						
+						<!-- Row 6 -->
+						<div>
+							<label class="block text-gray-600 mb-1">FLUTTING TYPE</label>
+							<select name="flutting_type" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+							<option value="" disabled selected>Select Flutting Type</option>
+							<option value="N/A">N/A</option>
+							<option value="E-FLUTING">E-FLUTING</option>
+							<option value="F-FLUTING">F-FLUTING</option>
+							<option value="B-FLUTING">B-FLUTING</option>
+							<option value="G-FLUTING">G-FLUTING</option>
+							<option value="A & B-FLUTING">A & B-FLUTING</option>
+							<option value="A-FLUTING">A-FLUTING</option>
+							<option value="C-FLUTING">C-FLUTING</option>
+							<option value="B & C-FLUTING">B & C-FLUTING</option>
+							<option value="N-FLUTING">N-FLUTING</option>
+							<option value="E & N-FLUTING">E & N-FLUTING</option>
+							</select>
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">PLY</label>
+						  <input type="text" name="flutting_type_ply" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						<div></div>
+						
+						<!-- Row 7 -->
+						<div>
+							<label class="block text-gray-600 mb-1">KRAFT PAPER</label>
+							<select name="kraft_paper" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+								<option value="" disabled selected>Select Kraft Paper</option>
+								<option value="N/A">N/A</option>
+								<option value="BLACK MAPLITHO">BLACK MAPLITHO</option>
+								<option value="FM WHITE MAPLITHO">FM WHITE MAPLITHO</option>
+								<option value="FM WHITE NATURAL">FM WHITE NATURAL</option>
+								<option value="FR WHITE">FR WHITE</option>
+								<option value="FSC FR NATURAL">FSC FR NATURAL</option>
+								<option value="GOLDEN YELLOW">GOLDEN YELLOW</option>
+								<option value="ITC INDOBASE [MF] TRIPLEX">ITC INDOBASE [MF] TRIPLEX</option>
+								<option value="KOREAN SHADE">KOREAN SHADE</option>
+								<option value="MAPLITHO">MAPLITHO</option>
+								<option value="NATURAL">NATURAL</option>
+								<option value="NATURAL WATER REPELLENT">NATURAL WATER REPELLENT</option>
+								<option value="WHITE BACK">WHITE BACK</option>
+								<option value="WHITE MAPLITHO">WHITE MAPLITHO</option>
+								<option value="YELLOW">YELLOW</option>
+								<option value="YELLOW GOLD SHADE">YELLOW GOLD SHADE</option>
+							</select>
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">GSM</label>
+						  <input type="text" name="kraft_paper_gsm" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">BF</label>
+						  <input type="text" name="kraft_paper_bf" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						
+						<!-- Row 8 -->
+						<div>
+							<label class="block text-gray-600 mb-1">KRAFT LINER</label>
+							<select name="kraft_liner" required
+								  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+								<option value="" disabled selected>Select Kraft Liner</option>
+								<option value="N/A">N/A</option>
+								<option value="BLACK MAPLITHO">BLACK MAPLITHO</option>
+								<option value="FM WHITE MAPLITHO">FM WHITE MAPLITHO</option>
+								<option value="FM WHITE NATURAL">FM WHITE NATURAL</option>
+								<option value="FR WHITE KRAFT LINER">FR WHITE KRAFT LINER</option>
+								<option value="FSC FR GRAY BACK">FSC FR GRAY BACK</option>
+								<option value="FSC FR NATURAL">FSC FR NATURAL</option>
+								<option value="GOLDEN">GOLDEN</option>
+								<option value="GREY BACK">GREY BACK</option>
+								<option value="ITC INDOBASE [MF] TRIPLEX">ITC INDOBASE [MF] TRIPLEX</option>
+								<option value="KOREAN SHADE">KOREAN SHADE</option>
+								<option value="MAPLITHO">MAPLITHO</option>
+								<option value="NATURAL">NATURAL</option>
+								<option value="NATURAL WATER REPELLENT">NATURAL WATER REPELLENT</option>
+								<option value="WHITE">WHITE</option>
+								<option value="WHITE BACK">WHITE BACK</option>
+								<option value="WHITE KRAFT LINER">WHITE KRAFT LINER</option>
+								<option value="WHITE MAPLITHO">WHITE MAPLITHO</option>
+								<option value="YELLOW GOLD SHADE">YELLOW GOLD SHADE</option>
+							</select>
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">GSM</label>
+						  <input type="text" name="kraft_liner_gsm" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+						<div>
+						  <label class="block text-gray-600 mb-1">BF</label>
+						  <input type="text" name="kraft_liner_bf" required
+								 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+						</div>
+					</form>
+				</div>
+		
+				<!-- Form Section 3 "PRINTING REQUIREMENTS" -->
+				<div class="border border-gray-300 rounded-lg p-6 mb-6">
+					<!-- Subheading -->
+					<div class="mb-4 bg-gray-200 text-center text-lg font-semibold p-2 rounded">
+						<p>PRINTING REQUIREMENTS</p>
+					</div>
+						
+					<div class="border p-4 mb-4">
+							
+						<!-- Table Content -->
+						<form id="pre_printing_requirements" class="grid grid-cols-3 gap-6">
+							
+							<!-- Subheading full width-->
+							<div class="col-span-3 bg-gray-200 text-center text-lg font-semibold p-2 rounded">
+								<p>PRE-PRINTING REQUIREMENTS</p>
+							</div>
+							
+							<!-- Row 1 -->
+							<div>
+								<label class="block text-gray-600 mb-1">PRE-PRINTING VALUE ADD (SELECTION)</label>
+								<select name="pre-printing_value_add" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+										<option value="" disabled selected>Select</option>
+										<option value="BACK SIDE GLOSS MET PET LAMINATION">BACK SIDE GLOSS MET PET LAMINATION</option>
+										<option value="BOPP PEARL">BOPP PEARL</option>
+										<option value="GLOSS FOIL STAMPED">GLOSS FOIL STAMPED</option>
+										<option value="GLOSS HOLOGRAPHIC MET PET LAMINATION">GLOSS HOLOGRAPHIC MET PET LAMINATION</option>
+										<option value="GLOSS MET PET LAMINATION">GLOSS MET PET LAMINATION</option>
+										<option value="MATT FOIL STAMPED">MATT FOIL STAMPED</option>
+										<option value="MATT HOLOGRAPHIC MET PET LAMINATION">MATT HOLOGRAPHIC MET PET LAMINATION</option>
+										<option value="MATT MET PET LAMINATION">MATT MET PET LAMINATION</option>
+										<option value="PRE-PRINTING CLOTH LAMINATION">PRE-PRINTING CLOTH LAMINATION</option>
+										<option value="UV EMBOSSED FILM">UV EMBOSSED FILM</option>
+										<option value="VACMET METALISED FILM">VACMET METALISED FILM</option>
+								</select>
+							</div>
+							<div>
+							  <label class="block text-gray-600 mb-1">MICRONS / DETAILS</label>
+							  <input type="text" name="pre_printing_details" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div></div>
+						</form>
+					</div>
+						
+					<div class="border p-4 mb-4">
+						
+						<!-- Table Content -->
+						<form id="post_printing_requirements" class="grid grid-cols-3 gap-6">
+							
+							<!-- Subheading full width-->
+							<div class="col-span-3 bg-gray-200 text-center text-lg font-semibold p-2 rounded">
+								<p>POST-PRINTING REQUIREMENTS</p>
+							</div>
+							
+							<!-- Row 2 -->
+							<div>
+								<label class="block text-gray-600 mb-1">FRONT SIDE VARNISH (SELECTIONS)</br>OPTION 1</label>
+								<select name="front_side_varnish_option_1" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="AQUEOUS">AQUEOUS</option>
+									<option value="AQUEOUS BASED BLISTER COATING">AQUEOUS BASED BLISTER COATING</option>
+									<option value="AQUEOUS MATT VARNISH">AQUEOUS MATT VARNISH</option>
+									<option value="AQUEOUS MATT VARNISH WITH NVZ">AQUEOUS MATT VARNISH WITH NVZ</option>
+									<option value="AQUEOUS SPOT MATT VARNISH">AQUEOUS SPOT MATT VARNISH</option>
+									<option value="AQUEOUS WITH NVZ">AQUEOUS WITH NVZ</option>
+									<option value="FLASH AQUEOUS">FLASH AQUEOUS</option>
+									<option value="FOOD GRADE SPOT VARNISH">FOOD GRADE SPOT VARNISH</option>
+									<option value="FOOD GRADE VARNISH">FOOD GRADE VARNISH</option>
+									<option value="FOOD GRADE VARNISH WITH NVZ">FOOD GRADE VARNISH WITH NVZ</option>
+									<option value="HEAT RESISTANCE COAT WITH NVZ">HEAT RESISTANCE COAT WITH NVZ</option>
+									<option value="HEAT RESISTANCE COATING">HEAT RESISTANCE COATING</option>
+									<option value="HEAT SEAL LACQUER COATING">HEAT SEAL LACQUER COATING</option>
+									<option value="HIGH RUB WB VARNISH WITH NVZ">HIGH RUB WB VARNISH WITH NVZ</option>
+									<option value="IRIODIN EFFECT">IRIODIN EFFECT</option>
+									<option value="LT. COAT OF AQUA SPOT">LT. COAT OF AQUA SPOT</option>
+									<option value="MATT UV">MATT UV</option>
+									<option value="MATT UV ON DEFINED AREA">MATT UV ON DEFINED AREA</option>
+									<option value="MATT UV WITH NVZ">MATT UV WITH NVZ</option>
+									<option value="PEARLIEST VARNISH WITH NVZ">PEARLIEST VARNISH WITH NVZ</option>
+									<option value="PEARLISED VARNISH">PEARLISED VARNISH</option>
+									<option value="SHIMMERING EFFECT">SHIMMERING EFFECT</option>
+									<option value="SILKY MATT AQUEOS">SILKY MATT AQUEOS</option>
+									<option value="SOFT TOUCH VARNISH">SOFT TOUCH VARNISH</option>
+									<option value="SOFT TOUCH VARNISH WITH NVZ">SOFT TOUCH VARNISH WITH NVZ</option>
+									<option value="SOLVENT BASED BLISTER COATING">SOLVENT BASED BLISTER COATING</option>
+									<option value="SPOT MATT UV">SPOT MATT UV</option>
+									<option value="TOYO VARNISH">TOYO VARNISH</option>
+									<option value="TOYO VARNISH WITH NVZ">TOYO VARNISH WITH NVZ</option>
+									<option value="UV COATING">UV COATING</option>
+									<option value="UV ON DEFINED AREA">UV ON DEFINED AREA</option>
+									<option value="UV WITH NVZ">UV WITH NVZ</option>
+									<option value="WATER BASED BLISTER VARNISH">WATER BASED BLISTER VARNISH</option>
+									<option value="WATER REPELLENT COATING">WATER REPELLENT COATING</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>OPTION 2</label>
+								<select name="front_side_varnish_option_2" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="AQUEOUS">AQUEOUS</option>
+									<option value="AQUEOUS BASED BLISTER COATING">AQUEOUS BASED BLISTER COATING</option>
+									<option value="AQUEOUS MATT VARNISH">AQUEOUS MATT VARNISH</option>
+									<option value="AQUEOUS MATT VARNISH WITH NVZ">AQUEOUS MATT VARNISH WITH NVZ</option>
+									<option value="AQUEOUS SPOT MATT VARNISH">AQUEOUS SPOT MATT VARNISH</option>
+									<option value="AQUEOUS WITH NVZ">AQUEOUS WITH NVZ</option>
+									<option value="FLASH AQUEOUS">FLASH AQUEOUS</option>
+									<option value="FOOD GRADE SPOT VARNISH">FOOD GRADE SPOT VARNISH</option>
+									<option value="FOOD GRADE VARNISH">FOOD GRADE VARNISH</option>
+									<option value="FOOD GRADE VARNISH WITH NVZ">FOOD GRADE VARNISH WITH NVZ</option>
+									<option value="HEAT RESISTANCE COAT WITH NVZ">HEAT RESISTANCE COAT WITH NVZ</option>
+									<option value="HEAT RESISTANCE COATING">HEAT RESISTANCE COATING</option>
+									<option value="HEAT SEAL LACQUER COATING">HEAT SEAL LACQUER COATING</option>
+									<option value="HIGH RUB WB VARNISH WITH NVZ">HIGH RUB WB VARNISH WITH NVZ</option>
+									<option value="IRIODIN EFFECT">IRIODIN EFFECT</option>
+									<option value="LT. COAT OF AQUA SPOT">LT. COAT OF AQUA SPOT</option>
+									<option value="MATT UV">MATT UV</option>
+									<option value="MATT UV ON DEFINED AREA">MATT UV ON DEFINED AREA</option>
+									<option value="MATT UV WITH NVZ">MATT UV WITH NVZ</option>
+									<option value="PEARLIEST VARNISH WITH NVZ">PEARLIEST VARNISH WITH NVZ</option>
+									<option value="PEARLISED VARNISH">PEARLISED VARNISH</option>
+									<option value="SHIMMERING EFFECT">SHIMMERING EFFECT</option>
+									<option value="SILKY MATT AQUEOS">SILKY MATT AQUEOS</option>
+									<option value="SOFT TOUCH VARNISH">SOFT TOUCH VARNISH</option>
+									<option value="SOFT TOUCH VARNISH WITH NVZ">SOFT TOUCH VARNISH WITH NVZ</option>
+									<option value="SOLVENT BASED BLISTER COATING">SOLVENT BASED BLISTER COATING</option>
+									<option value="SPOT MATT UV">SPOT MATT UV</option>
+									<option value="TOYO VARNISH">TOYO VARNISH</option>
+									<option value="TOYO VARNISH WITH NVZ">TOYO VARNISH WITH NVZ</option>
+									<option value="UV COATING">UV COATING</option>
+									<option value="UV ON DEFINED AREA">UV ON DEFINED AREA</option>
+									<option value="UV WITH NVZ">UV WITH NVZ</option>
+									<option value="WATER BASED BLISTER VARNISH">WATER BASED BLISTER VARNISH</option>
+									<option value="WATER REPELLENT COATING">WATER REPELLENT COATING</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>OPTION 3</label>
+								<select name="front_side_varnish_option_3" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="AQUEOUS">AQUEOUS</option>
+									<option value="AQUEOUS BASED BLISTER COATING">AQUEOUS BASED BLISTER COATING</option>
+									<option value="AQUEOUS MATT VARNISH">AQUEOUS MATT VARNISH</option>
+									<option value="AQUEOUS MATT VARNISH WITH NVZ">AQUEOUS MATT VARNISH WITH NVZ</option>
+									<option value="AQUEOUS SPOT MATT VARNISH">AQUEOUS SPOT MATT VARNISH</option>
+									<option value="AQUEOUS WITH NVZ">AQUEOUS WITH NVZ</option>
+									<option value="FLASH AQUEOUS">FLASH AQUEOUS</option>
+									<option value="FOOD GRADE SPOT VARNISH">FOOD GRADE SPOT VARNISH</option>
+									<option value="FOOD GRADE VARNISH">FOOD GRADE VARNISH</option>
+									<option value="FOOD GRADE VARNISH WITH NVZ">FOOD GRADE VARNISH WITH NVZ</option>
+									<option value="HEAT RESISTANCE COAT WITH NVZ">HEAT RESISTANCE COAT WITH NVZ</option>
+									<option value="HEAT RESISTANCE COATING">HEAT RESISTANCE COATING</option>
+									<option value="HEAT SEAL LACQUER COATING">HEAT SEAL LACQUER COATING</option>
+									<option value="HIGH RUB WB VARNISH WITH NVZ">HIGH RUB WB VARNISH WITH NVZ</option>
+									<option value="IRIODIN EFFECT">IRIODIN EFFECT</option>
+									<option value="LT. COAT OF AQUA SPOT">LT. COAT OF AQUA SPOT</option>
+									<option value="MATT UV">MATT UV</option>
+									<option value="MATT UV ON DEFINED AREA">MATT UV ON DEFINED AREA</option>
+									<option value="MATT UV WITH NVZ">MATT UV WITH NVZ</option>
+									<option value="PEARLIEST VARNISH WITH NVZ">PEARLIEST VARNISH WITH NVZ</option>
+									<option value="PEARLISED VARNISH">PEARLISED VARNISH</option>
+									<option value="SHIMMERING EFFECT">SHIMMERING EFFECT</option>
+									<option value="SILKY MATT AQUEOS">SILKY MATT AQUEOS</option>
+									<option value="SOFT TOUCH VARNISH">SOFT TOUCH VARNISH</option>
+									<option value="SOFT TOUCH VARNISH WITH NVZ">SOFT TOUCH VARNISH WITH NVZ</option>
+									<option value="SOLVENT BASED BLISTER COATING">SOLVENT BASED BLISTER COATING</option>
+									<option value="SPOT MATT UV">SPOT MATT UV</option>
+									<option value="TOYO VARNISH">TOYO VARNISH</option>
+									<option value="TOYO VARNISH WITH NVZ">TOYO VARNISH WITH NVZ</option>
+									<option value="UV COATING">UV COATING</option>
+									<option value="UV ON DEFINED AREA">UV ON DEFINED AREA</option>
+									<option value="UV WITH NVZ">UV WITH NVZ</option>
+									<option value="WATER BASED BLISTER VARNISH">WATER BASED BLISTER VARNISH</option>
+									<option value="WATER REPELLENT COATING">WATER REPELLENT COATING</option>
+								</select>
+							</div>
+							
+							<!-- Row 3 -->
+							<div>
+								<label class="block text-gray-600 mb-1">BACK SIDE VARNISH (SELECTIONS)</br>OPTION 1</label>
+								<select name="back_side_varnish_option_1" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="AQUEOUS">AQUEOUS</option>
+									<option value="AQUEOUS BASED BLISTER COATING">AQUEOUS BASED BLISTER COATING</option>
+									<option value="AQUEOUS MATT VARNISH">AQUEOUS MATT VARNISH</option>
+									<option value="AQUEOUS MATT VARNISH WITH NVZ">AQUEOUS MATT VARNISH WITH NVZ</option>
+									<option value="AQUEOUS SPOT MATT VARNISH">AQUEOUS SPOT MATT VARNISH</option>
+									<option value="AQUEOUS WITH NVZ">AQUEOUS WITH NVZ</option>
+									<option value="FLASH AQUEOUS">FLASH AQUEOUS</option>
+									<option value="FOOD GRADE SPOT VARNISH">FOOD GRADE SPOT VARNISH</option>
+									<option value="FOOD GRADE VARNISH">FOOD GRADE VARNISH</option>
+									<option value="FOOD GRADE VARNISH WITH NVZ">FOOD GRADE VARNISH WITH NVZ</option>
+									<option value="HEAT RESISTANCE COAT WITH NVZ">HEAT RESISTANCE COAT WITH NVZ</option>
+									<option value="HEAT RESISTANCE COATING">HEAT RESISTANCE COATING</option>
+									<option value="HEAT SEAL LACQUER COATING">HEAT SEAL LACQUER COATING</option>
+									<option value="HIGH RUB WB VARNISH WITH NVZ">HIGH RUB WB VARNISH WITH NVZ</option>
+									<option value="IRIODIN EFFECT">IRIODIN EFFECT</option>
+									<option value="LT. COAT OF AQUA SPOT">LT. COAT OF AQUA SPOT</option>
+									<option value="MATT UV">MATT UV</option>
+									<option value="MATT UV ON DEFINED AREA">MATT UV ON DEFINED AREA</option>
+									<option value="MATT UV WITH NVZ">MATT UV WITH NVZ</option>
+									<option value="PEARLIEST VARNISH WITH NVZ">PEARLIEST VARNISH WITH NVZ</option>
+									<option value="PEARLISED VARNISH">PEARLISED VARNISH</option>
+									<option value="SHIMMERING EFFECT">SHIMMERING EFFECT</option>
+									<option value="SILKY MATT AQUEOS">SILKY MATT AQUEOS</option>
+									<option value="SOFT TOUCH VARNISH">SOFT TOUCH VARNISH</option>
+									<option value="SOFT TOUCH VARNISH WITH NVZ">SOFT TOUCH VARNISH WITH NVZ</option>
+									<option value="SOLVENT BASED BLISTER COATING">SOLVENT BASED BLISTER COATING</option>
+									<option value="SPOT MATT UV">SPOT MATT UV</option>
+									<option value="TOYO VARNISH">TOYO VARNISH</option>
+									<option value="TOYO VARNISH WITH NVZ">TOYO VARNISH WITH NVZ</option>
+									<option value="UV COATING">UV COATING</option>
+									<option value="UV ON DEFINED AREA">UV ON DEFINED AREA</option>
+									<option value="UV WITH NVZ">UV WITH NVZ</option>
+									<option value="WATER BASED BLISTER VARNISH">WATER BASED BLISTER VARNISH</option>
+									<option value="WATER REPELLENT COATING">WATER REPELLENT COATING</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>OPTION 2</label>
+								<select name="back_side_varnish_option_2" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="AQUEOUS">AQUEOUS</option>
+									<option value="AQUEOUS BASED BLISTER COATING">AQUEOUS BASED BLISTER COATING</option>
+									<option value="AQUEOUS MATT VARNISH">AQUEOUS MATT VARNISH</option>
+									<option value="AQUEOUS MATT VARNISH WITH NVZ">AQUEOUS MATT VARNISH WITH NVZ</option>
+									<option value="AQUEOUS SPOT MATT VARNISH">AQUEOUS SPOT MATT VARNISH</option>
+									<option value="AQUEOUS WITH NVZ">AQUEOUS WITH NVZ</option>
+									<option value="FLASH AQUEOUS">FLASH AQUEOUS</option>
+									<option value="FOOD GRADE SPOT VARNISH">FOOD GRADE SPOT VARNISH</option>
+									<option value="FOOD GRADE VARNISH">FOOD GRADE VARNISH</option>
+									<option value="FOOD GRADE VARNISH WITH NVZ">FOOD GRADE VARNISH WITH NVZ</option>
+									<option value="HEAT RESISTANCE COAT WITH NVZ">HEAT RESISTANCE COAT WITH NVZ</option>
+									<option value="HEAT RESISTANCE COATING">HEAT RESISTANCE COATING</option>
+									<option value="HEAT SEAL LACQUER COATING">HEAT SEAL LACQUER COATING</option>
+									<option value="HIGH RUB WB VARNISH WITH NVZ">HIGH RUB WB VARNISH WITH NVZ</option>
+									<option value="IRIODIN EFFECT">IRIODIN EFFECT</option>
+									<option value="LT. COAT OF AQUA SPOT">LT. COAT OF AQUA SPOT</option>
+									<option value="MATT UV">MATT UV</option>
+									<option value="MATT UV ON DEFINED AREA">MATT UV ON DEFINED AREA</option>
+									<option value="MATT UV WITH NVZ">MATT UV WITH NVZ</option>
+									<option value="PEARLIEST VARNISH WITH NVZ">PEARLIEST VARNISH WITH NVZ</option>
+									<option value="PEARLISED VARNISH">PEARLISED VARNISH</option>
+									<option value="SHIMMERING EFFECT">SHIMMERING EFFECT</option>
+									<option value="SILKY MATT AQUEOS">SILKY MATT AQUEOS</option>
+									<option value="SOFT TOUCH VARNISH">SOFT TOUCH VARNISH</option>
+									<option value="SOFT TOUCH VARNISH WITH NVZ">SOFT TOUCH VARNISH WITH NVZ</option>
+									<option value="SOLVENT BASED BLISTER COATING">SOLVENT BASED BLISTER COATING</option>
+									<option value="SPOT MATT UV">SPOT MATT UV</option>
+									<option value="TOYO VARNISH">TOYO VARNISH</option>
+									<option value="TOYO VARNISH WITH NVZ">TOYO VARNISH WITH NVZ</option>
+									<option value="UV COATING">UV COATING</option>
+									<option value="UV ON DEFINED AREA">UV ON DEFINED AREA</option>
+									<option value="UV WITH NVZ">UV WITH NVZ</option>
+									<option value="WATER BASED BLISTER VARNISH">WATER BASED BLISTER VARNISH</option>
+									<option value="WATER REPELLENT COATING">WATER REPELLENT COATING</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>OPTION 3</label>
+								<select name="back_side_varnish_option_3" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="AQUEOUS">AQUEOUS</option>
+									<option value="AQUEOUS BASED BLISTER COATING">AQUEOUS BASED BLISTER COATING</option>
+									<option value="AQUEOUS MATT VARNISH">AQUEOUS MATT VARNISH</option>
+									<option value="AQUEOUS MATT VARNISH WITH NVZ">AQUEOUS MATT VARNISH WITH NVZ</option>
+									<option value="AQUEOUS SPOT MATT VARNISH">AQUEOUS SPOT MATT VARNISH</option>
+									<option value="AQUEOUS WITH NVZ">AQUEOUS WITH NVZ</option>
+									<option value="FLASH AQUEOUS">FLASH AQUEOUS</option>
+									<option value="FOOD GRADE SPOT VARNISH">FOOD GRADE SPOT VARNISH</option>
+									<option value="FOOD GRADE VARNISH">FOOD GRADE VARNISH</option>
+									<option value="FOOD GRADE VARNISH WITH NVZ">FOOD GRADE VARNISH WITH NVZ</option>
+									<option value="HEAT RESISTANCE COAT WITH NVZ">HEAT RESISTANCE COAT WITH NVZ</option>
+									<option value="HEAT RESISTANCE COATING">HEAT RESISTANCE COATING</option>
+									<option value="HEAT SEAL LACQUER COATING">HEAT SEAL LACQUER COATING</option>
+									<option value="HIGH RUB WB VARNISH WITH NVZ">HIGH RUB WB VARNISH WITH NVZ</option>
+									<option value="IRIODIN EFFECT">IRIODIN EFFECT</option>
+									<option value="LT. COAT OF AQUA SPOT">LT. COAT OF AQUA SPOT</option>
+									<option value="MATT UV">MATT UV</option>
+									<option value="MATT UV ON DEFINED AREA">MATT UV ON DEFINED AREA</option>
+									<option value="MATT UV WITH NVZ">MATT UV WITH NVZ</option>
+									<option value="PEARLIEST VARNISH WITH NVZ">PEARLIEST VARNISH WITH NVZ</option>
+									<option value="PEARLISED VARNISH">PEARLISED VARNISH</option>
+									<option value="SHIMMERING EFFECT">SHIMMERING EFFECT</option>
+									<option value="SILKY MATT AQUEOS">SILKY MATT AQUEOS</option>
+									<option value="SOFT TOUCH VARNISH">SOFT TOUCH VARNISH</option>
+									<option value="SOFT TOUCH VARNISH WITH NVZ">SOFT TOUCH VARNISH WITH NVZ</option>
+									<option value="SOLVENT BASED BLISTER COATING">SOLVENT BASED BLISTER COATING</option>
+									<option value="SPOT MATT UV">SPOT MATT UV</option>
+									<option value="TOYO VARNISH">TOYO VARNISH</option>
+									<option value="TOYO VARNISH WITH NVZ">TOYO VARNISH WITH NVZ</option>
+									<option value="UV COATING">UV COATING</option>
+									<option value="UV ON DEFINED AREA">UV ON DEFINED AREA</option>
+									<option value="UV WITH NVZ">UV WITH NVZ</option>
+									<option value="WATER BASED BLISTER VARNISH">WATER BASED BLISTER VARNISH</option>
+									<option value="WATER REPELLENT COATING">WATER REPELLENT COATING</option>
+								</select>
+							</div>
+							
+							<!-- Row 4 -->
+							<div>
+								<label class="block text-gray-600 mb-1">POST PRINTING LAMINATION (SELECTIONS)</br>FILM TYPE FRONT</label>
+								<select name="post_printing_lamination_front" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="A PET">A PET</option>
+									<option value="B PET">B PET</option>
+									<option value="BOPP GLOSS BACK SIDE">BOPP GLOSS BACK SIDE</option>
+									<option value="BOPP GLOSS FRONT SIDE">BOPP GLOSS FRONT SIDE</option>
+									<option value="BOPP MATT BACK SIDE">BOPP MATT BACK SIDE</option>
+									<option value="BOPP MATT FRONT SIDE">BOPP MATT FRONT SIDE</option>
+									<option value="BOPP VELVET BACK SIDE">BOPP VELVET BACK SIDE</option>
+									<option value="BOPP VELVET FRONT SIDE">BOPP VELVET FRONT SIDE</option>
+									<option value="LDPE LOW DENSITY POLYETHYLENE">LDPE LOW DENSITY POLYETHYLENE</option>
+									<option value="MATT PET LAMINATION">MATT PET LAMINATION</option>
+									<option value="PET BACK SIDE">PET BACK SIDE</option>
+									<option value="PET FRONT SIDE">PET FRONT SIDE</option>
+									<option value="SCUFF FREE MATT BOPP">SCUFF FREE MATT BOPP</option>
+									<option value="THERMAL MATT LAMINATION BACK SIDE">THERMAL MATT LAMINATION BACK SIDE</option>
+									<option value="THERMAL MATT LAMINATION FRONT SIDE">THERMAL MATT LAMINATION FRONT SIDE</option>
+									<option value="TRANSPARENT HOLOGRAPHIC">TRANSPARENT HOLOGRAPHIC</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>FILM TYPE BACK</label>
+								<select name="post_printing_lamination_back" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="A PET">A PET</option>
+									<option value="B PET">B PET</option>
+									<option value="BOPP GLOSS BACK SIDE">BOPP GLOSS BACK SIDE</option>
+									<option value="BOPP GLOSS FRONT SIDE">BOPP GLOSS FRONT SIDE</option>
+									<option value="BOPP MATT BACK SIDE">BOPP MATT BACK SIDE</option>
+									<option value="BOPP MATT FRONT SIDE">BOPP MATT FRONT SIDE</option>
+									<option value="BOPP VELVET BACK SIDE">BOPP VELVET BACK SIDE</option>
+									<option value="BOPP VELVET FRONT SIDE">BOPP VELVET FRONT SIDE</option>
+									<option value="LDPE LOW DENSITY POLYETHYLENE">LDPE LOW DENSITY POLYETHYLENE</option>
+									<option value="MATT PET LAMINATION">MATT PET LAMINATION</option>
+									<option value="PET BACK SIDE">PET BACK SIDE</option>
+									<option value="PET FRONT SIDE">PET FRONT SIDE</option>
+									<option value="SCUFF FREE MATT BOPP">SCUFF FREE MATT BOPP</option>
+									<option value="THERMAL MATT LAMINATION BACK SIDE">THERMAL MATT LAMINATION BACK SIDE</option>
+									<option value="THERMAL MATT LAMINATION FRONT SIDE">THERMAL MATT LAMINATION FRONT SIDE</option>
+									<option value="TRANSPARENT HOLOGRAPHIC">TRANSPARENT HOLOGRAPHIC</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>MICRONS</label>
+								<input type="text" name="post_printing_lamination_microns" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							
+							<!-- Row 5 -->
+							<div>
+								<label class="block text-gray-600 mb-1">GRAVURE PRINTING</label>
+								<select name="gravure_printing" required
+									class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="YES">YES</option>
+									<option value="NO">NO</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1">DETAILS, IF ANY</label>
+								<input type="text" name="gravure_printing_details" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div></div>
+							
+							<!-- Row 6 -->
+							<div>
+								<label class="block text-gray-600 mb-1">HOT FOIL STAMPING</label>
+								<select name="hot_foil_stamping" required
+									class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="YES">YES</option>
+									<option value="NO">NO</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1">DETAILS, IF ANY</label>
+								<input type="text" name="hot_foil_stamping_details" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div></div>
+							
+							<!-- Row 7 -->
+							<div>
+								<label class="block text-gray-600 mb-1">COLD FOIL</label>
+								<select name="cold_foil" required
+									class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="YES">YES</option>
+									<option value="NO">NO</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1">DETAILS, IF ANY</label>
+								<input type="text" name="cold_foil_details" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div></div>
+							
+							<!-- Row 8 -->
+							<div>
+								<label class="block text-gray-600 mb-1">EMBOSSING (SELECTIONS)</br>OPTION 1</label>
+								<select name="embossing_option_1" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="STEP EMBOSSING">STEP EMBOSSING</option>
+									<option value="MICRO EMBOSSING">MICRO EMBOSSING</option>
+									<option value="EMBOSSING">EMBOSSING</option>
+									<option value="DEBOSSING">DEBOSSING</option>
+									<option value="3D EMBOSSING">3D EMBOSSING</option>
+									<option value="2D EMBOSSING">2D EMBOSSING</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>OPTION 2</label>
+								<select name="embossing_option_2" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="STEP EMBOSSING">STEP EMBOSSING</option>
+									<option value="MICRO EMBOSSING">MICRO EMBOSSING</option>
+									<option value="EMBOSSING">EMBOSSING</option>
+									<option value="DEBOSSING">DEBOSSING</option>
+									<option value="3D EMBOSSING">3D EMBOSSING</option>
+									<option value="2D EMBOSSING">2D EMBOSSING</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>OPTION 3</label>
+								<select name="embossing_option_3" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="STEP EMBOSSING">STEP EMBOSSING</option>
+									<option value="MICRO EMBOSSING">MICRO EMBOSSING</option>
+									<option value="EMBOSSING">EMBOSSING</option>
+									<option value="DEBOSSING">DEBOSSING</option>
+									<option value="3D EMBOSSING">3D EMBOSSING</option>
+									<option value="2D EMBOSSING">2D EMBOSSING</option>
+								</select>
+							</div>
+							
+							<!-- Row 9 -->
+							<div>
+								<label class="block text-gray-600 mb-1">WINDOW PASTING</br>FILM TYPE</label>
+								<select name="window_pasting" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="PET FRONT SIDE">PET FRONT SIDE</option>
+									<option value="PET BACK SIDE">PET BACK SIDE</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>MICRONS</label>
+								<input type="text" name="window_pasting_microns" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div></div>
+							
+							<!-- Row 10 -->
+							<div>
+								<label class="block text-gray-600 mb-1">WINDOW LAMINATION</br>FILM TYPE</label>
+								<select name="window_lamination" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="A PET">A PET</option>
+									<option value="B PET">B PET</option>
+									<option value="LDPE LOW DENSITY POLYETHYLENE">LDPE LOW DENSITY POLYETHYLENE</option>
+									<option value="PET FRONT SIDE">PET FRONT SIDE</option>
+									<option value="PET BACK SIDE">PET BACK SIDE</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>MICRONS</label>
+								<input type="text" name="window_lamination_microns" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div></div>
+							
+							<!-- Row 11 -->
+							<div>
+								<label class="block text-gray-600 mb-1">LINER PASTING</label>
+								<select name="liner_pasting" required
+									class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="YES">YES</option>
+									<option value="NO">NO</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1">DETAILS, IF ANY</label>
+								<input type="text" name="liner_pasting_details" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div></div>
+							
+							<!-- Row 12 -->
+							<div>
+								<label class="block text-gray-600 mb-1">SCREEN PRINTING (SELECTIONS)</label>
+								<select name="screen_printing" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="INK PRINTING">INK PRINTING</option>
+									<option value="SPOT UV">SPOT UV</option>
+									<option value="RAISED UV">RAISED UV</option>
+									<option value="ABRASIVE">ABRASIVE</option>
+									<option value="SILVER GLITTER">SILVER GLITTER</option>
+									<option value="GOLD GLITTER">GOLD GLITTER</option>
+									<option value="SAND EFFECT">SAND EFFECT</option>
+									<option value="SOFT TOUCH">SOFT TOUCH</option>
+									<option value="THERMOCROMIC">THERMOCROMIC</option>
+									<option value="GLOW IN DARK">GLOW IN DARK</option>
+									<option value="SCRATCH OFF">SCRATCH OFF</option>
+									<option value="RUB N SNIFF">RUB N SNIFF</option>
+									<option value="SPOT GLOSS">SPOT GLOSS</option>
+									<option value="HYDROCHROMIC INK">HYDROCHROMIC INK</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1">DETAILS, IF ANY</label>
+								<input type="text" name="screen_printing_details" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div></div>
+							
+							<!-- Row 13 -->
+							<div>
+								<label class="block text-gray-600 mb-1">VARIABLE DATA PRINTING (SELECTIONS)</label>
+								<select name="variable_data_printing" required
+									  class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:ring-2 focus:ring-blue-500">
+									<option value="" disabled selected>Select</option>
+									<option value="N/A">N/A</option>
+									<option value="ALPHANUMERIC CODE">ALPHANUMERIC CODE</option>
+									<option value="QR CODE">QR CODE</option>
+									<option value="BARCODE">BARCODE</option>
+									<option value="OTHER 2D CODE">OTHER 2D CODE</option>
+								</select>
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1">DETAILS, IF ANY</label>
+								<input type="text" name="variable_data_printing_details" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div></div>
+							
+							<!-- Row 14 -->
+							<div>
+								<label class="block text-gray-600 mb-1">SPECIAL COMPONENT</br>OPTION 1</label>
+								<input type="text" name="special_component_option_1" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div>
+								<label class="block text-gray-600 mb-1"></br>OPTION 2</label>
+								<input type="text" name="special_component_option_2" required
+									 class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500" />
+							</div>
+							<div></div>
+						</form>
+					</div>
+				</div>
+				
+				<!-- Form Section 4 "SPECIAL INSTRUCTIONS" -->
+				<div class="border border-gray-300 rounded-lg p-6 mb-6">
+					<!-- Table Content -->
+					<form id="special_instructions" class="grid grid-cols-1 gap-6">
+						<!-- Full-Width Heading -->
+						<div class="col-span-1 bg-gray-200 text-center text-lg font-semibold p-2 rounded">
+							<label class="block text-gray-600 mb-1">SPECIAL INSTRUCTIONS</label>
+						</div>
+						<!-- Full-Width Textarea -->
+						<div class="col-span-1">
+							<textarea name="special_instructions" required
+							class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500"
+							rows="4"></textarea>
+						</div>
+					</form>
+				</div>
+
+				
+				<!-- Confirmation and Share Section -->
+				<div class="border border-gray-300 rounded-lg p-6 no-print">
+				  <div class="mb-4">
+					<input type="checkbox" id="confirmation" required class="mr-2" onchange="toggleButtons()">
+					<label for="confirmation" class="text-gray-600">I hereby confirm that the information provided is accurate and complete to the best of my knowledge.</label>
+				  </div>
+				  <div class="grid grid-cols-2 gap-4">
+					<button id="printButton" onclick="window.print()" disabled class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition">
+					  Print Form
+					</button>
+					<button id="shareButton" onclick="prepareAndEmailForm()" disabled class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">
+					  Share Form
+					</button>
+				  </div>
+				</div>
+	  
+				<script>
+					function toggleButtons() {
+					const isChecked = document.getElementById('confirmation').checked;
+					document.getElementById('printButton').disabled = !isChecked;
+					document.getElementById('shareButton').disabled = !isChecked;
+					}
+				</script>
+				
+				<script>
+						function prepareAndEmailForm() {
+						// List of form IDs
+						const formIds = ['production_plant', 'carton_specification', 'pre_printing_requirements', 'post_printing_requirements', 'special_instructions']; // Add all your form IDs here
+
+						// Extract necessary values for the filename
+						const heading = "Project Briefing"; // Static heading
+						const now = new Date();
+						const downloadTime = now
+						.toLocaleString("en-GB", { hour12: false }) // Format as "dd/mm/yyyy, hh:mm:ss"
+						.replace(/[,/:\s]/g, "-"); // Replace problematic characters with hyphens
+
+						// Start constructing the combined HTML
+						let combinedHTML = `
+						<html>
+						<head><title>Shared Form</title></head>
+						<body style="font-family: Arial, sans-serif;">
+						<h2 style="text-align: center;">${heading}</h2>
+						`;
+
+						formIds.forEach(formId => {
+						const form = document.getElementById(formId);
+						if (!form) return; // Skip if the form ID is not found
+
+						const formData = new FormData(form);
+
+						// Add form section header
+						combinedHTML += `<h3 style="text-align: center;">Form: ${formId}</h3>`;
+						combinedHTML += `<table border="1" cellpadding="10" style="width: 100%; border-collapse: collapse;">`;
+
+						formData.forEach((value, key) => {
+						combinedHTML += `
+						<tr>
+						<th style="text-align: left; background-color: #f2f2f2;">${key.toUpperCase()}</th>
+						<td>${value}</td>
+						</tr>
+						`;
+						});
+
+						combinedHTML += `</table><br />`;
+						});
+
+						combinedHTML += `
+						</body>
+						</html>
+						`;
+
+						// Trigger a download of the HTML file
+						const filename = `${heading}_${downloadTime}.html`
+						.replace(/\s+/g, "_") // Replace spaces with underscores
+						.replace(/[^a-zA-Z0-9._-]/g, ""); // Remove invalid characters for filenames
+
+						const blob = new Blob([combinedHTML], { type: 'text/html' });
+						const url = URL.createObjectURL(blob);
+						const link = document.createElement('a');
+						link.href = url;
+						link.download = filename;
+						link.click();
+						URL.revokeObjectURL(url);
+
+						alert(`The forms have been combined and downloaded as: ${filename}`);
+						}
+				</script>
+				
+				<!-- Disable Right-Click and View Source -->
+				<script>
+						document.addEventListener('contextmenu', event => event.preventDefault());
+						document.addEventListener('keydown', event => {
+						if (event.ctrlKey && (event.key === 'u' || event.key === 's' || event.key === 'p')) {
+						event.preventDefault();
+						}
+						});
+				</script>
+
+			</div>
+		</body>
+	</html>
